@@ -42,7 +42,7 @@ Windows 10 or 11, 64-bit. It uses the .NET Framework 4.8 that's already built in
 Each release lists SHA-256 checksums. To check yours, run this in PowerShell:
 
 ```powershell
-Get-FileHash .\RAMbo-Setup-1.3.0.exe -Algorithm SHA256
+Get-FileHash .\RAMbo-Setup-1.3.1.exe -Algorithm SHA256
 ```
 
 ## A note on "freeing RAM"
