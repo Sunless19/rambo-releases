@@ -9,8 +9,12 @@ A lightweight Windows memory cleaner. Formerly called SelfMemReduct. It frees ca
 - Live dashboard: RAM gauge, committed memory, standby cache and a 3-minute history graph
 - One-click cleaning, a global hotkey (Ctrl+F1 by default) and a tray icon showing your current RAM %
 - Auto-clean when RAM goes over a percentage you set, and/or on a timer
-- Processes view: see which apps use the most RAM, then trim or end them
-- Safe defaults: options that can cause stutter are off and clearly marked
+- Processes view grouped by app: see which apps use the most RAM, then trim or end them
+- **Startup apps**: see what launches at sign-in and how much RAM each one uses, and switch them off (same switch as Task Manager, fully reversible)
+- **Cache & risks**: shows what each clean would throw away, its risk level, and how long your drive needs to reload it
+- **Rebound report**: after each clean, shows how much data Windows actually had to read back from disk
+- Safe defaults: high-risk options are off, and always show a warning preview before they run
+- Shows up in Task Manager → Startup apps and in Control Panel → Programs and Features
 - **No internet access, no telemetry, no ads.** The app contains no network code at all.
 
 ## Install
@@ -38,7 +42,7 @@ Windows 10 or 11, 64-bit. It uses the .NET Framework 4.8 that's already built in
 Each release lists SHA-256 checksums. To check yours, run this in PowerShell:
 
 ```powershell
-Get-FileHash .\RAMbo-Setup-1.2.0.exe -Algorithm SHA256
+Get-FileHash .\RAMbo-Setup-1.3.0.exe -Algorithm SHA256
 ```
 
 ## A note on "freeing RAM"
