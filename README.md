@@ -1,8 +1,8 @@
-# SelfMemReduct
+# RAMbo
 
-A lightweight Windows memory cleaner. It frees cached and idle RAM, shows what is using your memory, and lives quietly in the tray.
+A lightweight Windows memory cleaner. Formerly called SelfMemReduct. It frees cached and idle RAM, shows what is using your memory, and lives quietly in the tray.
 
-**[⬇ Download the latest version](https://github.com/Sunless19/selfmemreduct-releases/releases/latest)**
+**[⬇ Download the latest version](https://github.com/Sunless19/rambo-releases/releases/latest)**
 
 ## Features
 
@@ -15,17 +15,19 @@ A lightweight Windows memory cleaner. It frees cached and idle RAM, shows what i
 
 ## Install
 
-1. Download **`SelfMemReduct-Setup-<version>.exe`** from the [latest release](https://github.com/Sunless19/selfmemreduct-releases/releases/latest).
+1. Download **`RAMbo-Setup-<version>.exe`** from the [latest release](https://github.com/Sunless19/rambo-releases/releases/latest).
 2. Run it and click **Install**. Windows asks for administrator rights, which are needed to clear system memory lists.
-3. Find it in the Start menu as **SelfMemReduct**.
+3. Find it in the Start menu as **RAMbo**.
 
 **"Windows protected your PC"?** The installer isn't signed with a paid code-signing certificate, so SmartScreen warns about it. Click **More info → Run anyway**.
 
-**Portable version:** download `SelfMemReduct-<version>-portable.zip`, unzip it anywhere and run `SelfMemReduct.exe`. There's nothing to install.
+**Portable version:** download `RAMbo-<version>-portable.zip`, unzip it anywhere and run `RAMbo.exe`. There's nothing to install.
 
-**Uninstall:** go to Windows **Settings → Apps → SelfMemReduct → Uninstall**.
+**Uninstall:** go to Windows **Settings → Apps → RAMbo → Uninstall**.
 
-**Silent install** (for IT and scripts): `SelfMemReduct-Setup-<version>.exe /S`
+**Upgrading from SelfMemReduct 1.1.0?** Just run the RAMbo installer. It carries over your settings, log and start-with-Windows choice, and removes the old app.
+
+**Silent install** (for IT and scripts): `RAMbo-Setup-<version>.exe /S`
 
 ## Requirements
 
@@ -36,7 +38,7 @@ Windows 10 or 11, 64-bit. It uses the .NET Framework 4.8 that's already built in
 Each release lists SHA-256 checksums. To check yours, run this in PowerShell:
 
 ```powershell
-Get-FileHash .\SelfMemReduct-Setup-1.1.0.exe -Algorithm SHA256
+Get-FileHash .\RAMbo-Setup-1.2.0.exe -Algorithm SHA256
 ```
 
 ## A note on "freeing RAM"
